@@ -1,0 +1,42 @@
+body {
+            font-family: "Candara", sans-serif;
+            font-style: normal;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000000;
+            color: aliceblue;
+        }
+        .heading {
+            text-align: center;
+            background-color: #e32020f7;
+            color: #ffffff;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            grid-gap: 10px;
+            margin-top: 20px;
+        }
+
+        .cell {
+            color:#fff;
+            width: 100px;
+            height: 100px;
+            background-color: #000000;
+            border: 1px solid #e32020f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2em;
+            cursor: pointer;
+            transition: box-shadow 0.5s ease-in-out;
+        }
+
+        .cell:hover {
+            box-shadow: 0 0 5px 0 #3d0000f7, 0 0 8px 0 #914545f7, 0 0 12px 0 #f31a1af7;
+        }
